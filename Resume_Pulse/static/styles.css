@@ -1,0 +1,22 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+#careerPathSelection, #groupsList {
+    margin-top: 20px;
+}
+
+#groupsList {
+    display: none;
+}
+
+button {
+    margin-left: 10px;
+}
