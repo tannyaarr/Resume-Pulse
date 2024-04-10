@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path Advisor</title>
+    <style>
+		main {
+			margin-bottom: 100px;
+		}
+		
+		footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.5);;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0; /* Adjust padding as needed */
+        }
+
+		nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333; 
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007bff; 
+        }
+    </style>
+</head>
+<body background='C:\Users\flora\Downloads\Download free image of Leaves shadow with sunlight background by Adjima about shadow leaves, monstera, floral shadow, shadow, and monstera shadows 2607907.jpeg'> 
+<body>
+    <header>
+        <h1>Career Path Advisor</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Registration</h2>
+            <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+
+            <!-- Google Sign-In button -->
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            
+            <!-- Facebook Login button -->
+            <fb:login-button 
+                scope="public_profile,email"
+                onlogin="checkLoginState();">
+            </fb:login-button>
+			
+			<button onclick="loginWithFacebook()">Login with Facebook</button>
+			<button onclick="loginWithGoogle()">Login with Google</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Resume Pulse ©2024. All right reserved.</p>
+    </footer>
+
+   
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+        // Initialize the Google Sign-In button
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+            console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+            console.log('Name: ' + profile.getName());
+            console.log('Image URL: ' + profile.getImageUrl());
+            console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
+    </script>
+    <script>
+        // Initialize the Facebook SDK
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : 'YOUR_APP_ID',
+                cookie     : true,
+                xfbml      : true,
+                version    : 'v12.0'
+            });
+              
+            FB.AppEvents.logPageView();   
+        };
+          
+        // Load the SDK asynchronously
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        // Function to handle Facebook Login response
+        function checkLoginState() {
+            FB.getLoginStatus(function(response) {
+                statusChangeCallback(response);
+            });
+        }
+
+        // Function to handle Facebook authentication response
+        function statusChangeCallback(response) {
+            if (response.status === 'connected') {
+                // Logged into your webpage and Facebook.
+                console.log('Welcome! Fetching your information.... ');
+                FB.api('/me', function(response) {
+                    console.log('Successful login for: ' + response.name);
+                });
+            } else {
+                // User is not logged into your webpage or Facebook.
+                console.log('Please log ' +
+                'into this webpage.');
+            }
+        }
+		
+		document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            // Prevent the form from submitting normally
+            event.preventDefault();
+
+            // Get the username and email input values
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+
+            // Here, you can perform any additional validation or processing before redirection
+
+            // Redirect to the about page
+            window.location.href = "about.html";
+        });
+		
+		function loginWithFacebook() {
+            // Implement Facebook login flow
+            // Redirect user to the about page after successful login
+            window.location.href = "about.html";
+        }
+
+        function loginWithGoogle() {
+            // Implement Google login flow
+            // Redirect user to the about page after successful login
+            window.location.href = "about.html";
+        }
+    </script>
+</body>
+</html>

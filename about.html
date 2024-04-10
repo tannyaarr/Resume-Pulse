@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Pulse - About</title>
+	<style>
+		#interests {
+			width: 300px; 
+			height: 100px; 
+			resize: none;
+			margin-right: 10px;
+		}
+		
+		button[type="submit"] {
+			margin-left: 10px;
+		}
+
+		main {
+			margin-bottom: 100px;
+		}
+		
+		footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0; /* Adjust padding as needed */
+        }
+		
+		nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333; 
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007bff; 
+        }
+    </style>
+</head>
+<body background='C:\Users\flora\Downloads\Download free image of Leaves shadow with sunlight background by Adjima about shadow leaves, monstera, floral shadow, shadow, and monstera shadows 2607907.jpeg'>
+<body>
+    <header>
+        <h1>Career Path Advisor</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Tell Us About Yourself</h2>
+            <p>Let us know a little bit about yourself to help us guide you in choosing the right career path.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                <label for="interests">Interests:</label>
+                <textarea id="interests" name="interests" rows="5" cols="50" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+		
+		<section>
+			<form action="submit_profile.php" method="post" enctype="multipart/form-data">
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" required><br><br>
+    
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required><br><br>
+    
+				<label for="profile_pic">Profile Picture:</label>
+				<input type="file" id="profile_pic" name="profile_pic" accept="image/*"><br><br>
+    
+				<label for="resume">Upload Resume:</label>
+				<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+    
+				<button type="submit">Create Profile</button>
+			</form>
+
+		</section>
+    </main>
+
+    <footer>
+        <p>&copy; Resume Pulse ©2024. All right reserved.</p>
+    </footer>
+</body>
+</html>

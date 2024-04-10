@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Pulse - Quiz</title>
+    <style>
+		main {
+			margin-bottom: 100px;
+		}
+		footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0; /* Adjust padding as needed */
+        }
+
+		nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333; 
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007bff; 
+        }
+    </style>
+</head>
+<body background='C:\Users\flora\Downloads\Download free image of Leaves shadow with sunlight background by Adjima about shadow leaves, monstera, floral shadow, shadow, and monstera shadows 2607907.jpeg'>
+<body>
+    <header>
+        <h1>Career Path Quiz</h1>
+		<nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quiz">
+            <h2>Discover Your Ideal Career Path</h2>
+            <form id="quizForm" action="#" method="post">
+                <p>Question 1: What type of activities do you enjoy doing in your free time?</p>
+                <label>
+                    <input type="radio" name="q1" value="1">
+                    Outdoor activities
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="2">
+                    Creative activities like drawing or writing
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="3">
+                    Solving puzzles or problems
+                </label><br>
+
+                <p>Question 2: Which subject do you enjoy the most in school?</p>
+                <label>
+                    <input type="radio" name="q2" value="1">
+                    Math or Science
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="2">
+                    Art or Music
+                </label><br>
+                <label>
+                    <input type="radio" name="q2" value="3">
+                    Social Studies or Language Arts
+                </label><br>
+				
+				 <p>Question 3: What are your long-term career asiprations?</p>
+                <label>
+                    <input type="radio" name="q3" value="1">
+                    Becoming a leader in the Industry
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="2">
+                    Entrepreneurship
+                </label><br>
+                <label>
+                    <input type="radio" name="q3" value="3">
+                    Advancement and Growth Within a Company
+                </label><br>
+				 
+				 <p>Question 4: What work environments or culture do you thrive in?</p>
+                <label>
+                    <input type="radio" name="q4" value="1">
+                    Collaborative and Team-Oriented
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="2">
+                    Innovative and Creative
+                </label><br>
+                <label>
+                    <input type="radio" name="q4" value="3">
+                    Structured and Organized
+                </label><br>
+				
+				<p>Question 5: What work-life balance do you desire?</p>
+                <label>
+                    <input type="radio" name="q5" value="1">
+                    Adjustbale work hours or Work remotely
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="2">
+                    Environmwnts that prioritize work-life integration
+                </label><br>
+                <label>
+                    <input type="radio" name="q5" value="3">
+                    Value employers who recognize the importance of employee well-being and offer resources and support to help maintain a healthy balance, such as flexible scheduling, wellness programs, and paid time of
+                </label><br>
+				
+				 <p>Question 6: Are there any hobbies or passions you have that you would like to incorporate into your career?</p>
+                <label>
+                    <input type="radio" name="q6" value="1">
+                    Photography or Music
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="2">
+                    Cooking and Culinary Arts
+                </label><br>
+                <label>
+                    <input type="radio" name="q6" value="3">
+                    Creative Writing or Fitness and Health
+                </label><br>
+			<br>
+				<fieldset>
+					<legend>Technical Skills</legend>
+					<input type="checkbox" id="programming" name="programming" value="Programming and coding">
+					<label for="programming">Programming and coding</label></br>
+					<input type="checkbox" id="data_analysis" name="data_analysis" value="Data analysis and interpretation">
+					<label for="data_analysis">Data analysis and interpretation</label><br>
+					<input type="checkbox" id="graphic_design" name="graphic_design" value="Graphic design and multimedia production">
+					<label for="graphic_design">Graphic design and multimedia production</label></br>
+    
+				</fieldset>
+			</br>
+				<fieldset>
+					<legend>Soft Skills</legend>
+					<input type="checkbox" id="communication" name="communication" value="Communication and interpersonal skills">
+					<label for="communication">Communication and interpersonal skills</label><br>
+					<input type="checkbox" id="leadership" name="leadership" value="Leadership and team management">
+					<label for="leadership">Leadership and team management</label><br>
+					<input type="checkbox" id="problem-solving" name="problem-sovling" value="Problem-solving and critical thinking">
+					<label for="problem-solving">Problem-solving and critical thinking</label><br>
+    
+				</fieldset>
+                <button type="button" onclick="calculateResult()">Submit</button>
+            </form>
+        </section>
+
+        <section id="result">
+            <!-- Result will be displayed here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Resume Pulse ©2024. All right reserved.</p>
+    </footer>
+
+    <script>
+        function calculateResult() {
+            // Get the form element
+            var form = document.getElementById('quizForm');
+            
+            // Get all radio inputs within the form
+			var inputs = form.querySelectorAll('input[type="radio"]:checked');
+    
+			// Initialize total score
+			var totalScore = 0;
+    
+			// Loop through each selected answer and calculate total score
+			inputs.forEach(function(input) {
+				totalScore += parseInt(input.value);
+			});
+
+            // Determine the result based on the total score
+            var result = '';
+            if (totalScore <= 3) {
+                result = 'Your ideal career path might be Software Developer.';
+            } else if (totalScore <= 6) {
+                result = 'Your ideal career path might be Graphic Designer.';
+			} else if (totalScore <= 9) {
+				result = 'Your ideal career path might be Nurse.';
+			} else if (totalScore <= 12) {
+				result = 'Your ideal career path might be Product Manager.';
+            } else {
+                result = 'Your ideal career path might be Teacher.';
+            }
+
+            // Display the result
+            document.getElementById('result').innerHTML = '<h3>Result:</h3><p>' + result + '</p>';
+        }
+    </script>
+</body>
+</html>

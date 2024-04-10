@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Pulse - Careers</title>
+	<style>
+		.search-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+
+		.search-container input[type="text"] {
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			width: 300px;
+			font-size: 16px;
+		}
+
+		/* Style for the search button */
+		.search-container button {
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-left: 10px;
+		}
+
+		/* Style for the search button on hover */
+		.search-container button:hover {
+			background-color: #0056b3;
+		}
+		main {
+			margin-bottom: 100px;
+		}
+		
+		footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.5);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0; /* Adjust padding as needed */
+        }
+
+		nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333; 
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007bff; 
+        }
+    </style>
+   
+</head>
+<body background='C:\Users\flora\Downloads\Download free image of Leaves shadow with sunlight background by Adjima about shadow leaves, monstera, floral shadow, shadow, and monstera shadows 2607907.jpeg'>
+<body>
+    <header>
+        <h1>Career Path Advisor</h1>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="careers">Careers</a></li>
+                <li><a href="quiz">Quiz</a></li>
+                <li><a href="resources">Resources</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+		<div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="search()">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="careers">
+            <h2>Career Paths</h2>
+            <div class="career">
+                <h3>Software Developer</h3>
+                <p>Software developers are responsible for creating, testing, and maintaining software applications.</p>
+				<p><li>A software engineer possesses a unique set of characteristics that enable them to excel in their role. Here are some key characteristics typically associated with a successful software engineer:
+				<p><li>Analytical Thinking: Software engineers must be able to analyze complex problems, break them down into smaller components, and develop logical solutions.
+				</p></li>
+				<p><li>Problem-Solving Skills: They excel at identifying and solving technical problems efficiently and creatively, often employing various strategies and methodologies to find optimal solutions.</li></p>
+
+            </div>
+            <div class="career">
+                <h3>Registered Nurse</h3>
+                <p>Registered nurses provide and coordinate patient care, educate patients and the public about various health conditions.</p>
+				<p><li> Education and Training: Registered Nurses typically complete a nursing program, which can lead to either an associate degree in nursing (ADN) or a bachelor's degree in nursing (BSN). Additionally, they must pass the National Council Licensure Examination for Registered Nurses (NCLEX-RN) to obtain licensure.</li></p>
+				<p><li>Registered Nurses work in various healthcare settings, including hospitals, clinics, nursing homes, schools, community health centers, and home health agencies. They may specialize in areas such as critical care, emergency nursing, pediatrics, oncology, mental health, or public health.</li></p>
+            </div>
+			
+            <div>
+			<div class="career">
+				<h4>Product Manager</h4>
+				<p>A Product Manager is responsible for overseeing the development, launch, and ongoing success of a product or a set of products within a company. Their role involves collaborating with various teams, including engineering, design, marketing, and sales, to ensure that the product meets the needs of customers and aligns with the company's strategic objectives. Here are some key responsibilities and activities typically associated with a Product Manager:</p>
+				<p><li>Product Strategy: Developing and articulating the product vision, strategy, and roadmap based on market research, customer feedback, and business goals. This involves understanding market trends, competitive analysis, and identifying opportunities for product innovation and differentiation.</li></p>
+				<p><li>Requirement Gathering and Prioritization: Gathering requirements from stakeholders, customers, and internal teams to define product features and functionality. Prioritizing feature development based on business value, customer needs, and technical feasibility.</li></p>
+				<p><li>Cross-functional Collaboration: Collaborating with engineering, design, marketing, sales, and other teams throughout the product development lifecycle. Facilitating communication and alignment between different departments to ensure that everyone is working towards common goals.</li></p>
+			</div>
+			<div class="career">
+				<h5>Senior Manager<h5>
+				<p>A Senior Manager is a high-level executive responsible for overseeing and managing a specific department, division, or area within an organization. Their role is to provide leadership, strategic direction, and guidance to ensure the successful operation and achievement of goals within their area of responsibility. Here are some key responsibilities and duties typically associated with a Senior Manager:</p>
+				<p><li>Strategic Planning: Senior Managers are responsible for developing and implementing strategic plans, goals, and objectives aligned with the organization's overall mission and vision. They analyze market trends, competitive landscape, and internal capabilities to identify opportunities for growth and improvement.</li></p>
+				<p><li>Team Leadership: Senior Managers lead and manage a team of professionals, providing direction, coaching, and support to help them achieve their individual and collective goals. They foster a positive work environment, promote teamwork and collaboration, and ensure that team members have the resources and support they need to succeed</li></p>
+				</p><li>Budgeting and Financial Management: Senior Managers oversee the budgeting process for their area of responsibility, allocating resources effectively and efficiently to support strategic initiatives and operational activities. They analyze financial data, control costs, and optimize resource allocation to maximize profitability and return on investment.</li></p>
+			</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Resume Pulse ©2024. All right reserved.</p>
+    </footer>
+	<script>
+		function search() {
+			// Get the search input value
+			var searchQuery = document.getElementById('searchInput').value;
+
+			// Perform search functionality here, e.g., redirect to search results page or display search results dynamically
+			alert('Searching for: ' + searchQuery);
+		}
+	</script>
+</body>
+</html>
